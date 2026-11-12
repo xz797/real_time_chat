@@ -17,7 +17,9 @@ dependencies {
     implementation(ktorLibs.server.core)
     implementation(ktorLibs.server.netty)
     implementation(libs.logback.classic)
+    implementation("io.ktor:ktor-server-call-logging-jvm:3.0.0")
 
     testImplementation(kotlin("test"))
     testImplementation(ktorLibs.server.testHost)
+
 }
